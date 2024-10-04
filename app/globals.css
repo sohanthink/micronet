@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  list-style-type: none;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,5 +27,11 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .custom-btn {
+    @apply px-3 py-2 bg-customBlue border-2 border-opacity-0 transition-all duration-300 ease-out;
   }
 }

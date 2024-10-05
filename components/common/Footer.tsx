@@ -59,7 +59,7 @@ const socialMediaData=[
 
 const Footer = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white pt-20">
       <div className="py-4 w-4/5 mx-auto">
         <div className='flex justify-between gap-20'>
             <div className='w-1/4 space-y-4'>

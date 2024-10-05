@@ -5,6 +5,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Button from './Button'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
+import logo from '@/public/Logo.png'
 
 
 
@@ -22,7 +23,7 @@ const Navbar = () => {
         <div className='py-4 w-4/5 mx-auto'>
             <div className='flex justify-between items-center'>
                 <div>
-                    <Image src='/Logo.png' alt='logo' width={100} height={100} />
+                    <Image src={logo} alt='logo' />
                 </div>
                 <div className=''>
                     <div className='flex gap-16 items-center text-black'>

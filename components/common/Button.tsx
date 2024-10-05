@@ -8,7 +8,7 @@ import React from 'react'
 
     const Button: React.FC<ButtonProps> = ({ text,styles }) => {
         return (
-            <div className={`${styles} px-3 py-2 cursor-pointer transition-all duration-300 ease-out`}>
+            <div className={`${styles} font-medium px-3 py-2 cursor-pointer transition-all duration-300 ease-out`}>
                 {text}
             </div>
         )

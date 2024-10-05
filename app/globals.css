@@ -31,7 +31,7 @@ body {
 }
 
 @layer components {
-  .custom-btn {
-    @apply px-3 py-2 bg-customBlue border-2 border-opacity-0 transition-all duration-300 ease-out;
+  .title_highlight {
+    @apply font-bold text-2xl text-customBlue-dark;
   }
 }

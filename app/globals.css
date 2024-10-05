@@ -34,4 +34,7 @@ body {
   .title_highlight {
     @apply font-bold text-2xl text-customBlue-dark;
   }
+  .common_title {
+    @apply font-bold text-4xl text-customBlue-dark text-center;
+  }
 }

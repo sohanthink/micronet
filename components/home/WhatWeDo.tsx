@@ -5,6 +5,7 @@ import sky from '@/public/home/icons/What We Are.png'
 import watch from '@/public/home/icons/Watch.png'
 import heart from '@/public/home/icons/heart.png'
 import Link from 'next/link'
+import Bgshape from '@/public/home/Background Image Effects.png'
 
 const DATA = [
     {
@@ -60,16 +61,38 @@ export const DoItems:React.FC<DoItemsProps> =({icon,title,description,link})=>{
 
 const WhatWeDo = () => {
   return (
-    <div className='py-4 w-4/5 mx-auto'>
+ <>
+    <div className='py-4 relative'>
         <h4 className='common_title'>What We Do</h4>
-        <div className='flex gap-10 flex-row mt-20'>
+        <div className='flex gap-10 flex-row mt-20 relative z-10 mx-auto w-4/5'>
             {
                 DATA.map((item)=>(
                     <DoItems icon={item.icon} title={item.title} description={item.description} link={item.link} />
                 ))
             }
         </div>
+        <div className='absolute top-36 left-0 w-full'>
+            <Image src={Bgshape} className='w-full' alt='backfround-image-shape'  />
+        </div>
     </div>
+
+    {/* MIcronetbd section completed */}
+
+    <div className='z-20 relative'>
+            <h4 className='common_title pt-20'>Micronetbd Office</h4>
+            <p className='text-customDark text-lg text-center py-5'>Take a <b>Virtual Tour </b>of our <b>Headquarters!</b></p>
+            <div className='w-2/4 mx-auto'>
+                <iframe
+                    src='https://www.youtube.com/embed/Y1z069Ci5aE?list=RDyxqw9ju2D_E'
+                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                    referrerPolicy='strict-origin-when-cross-origin'
+                    allowFullScreen
+                    className='w-full h-[450px] mt-10'
+                ></iframe>
+            </div>
+    </div>
+
+ </>
   )
 }
 

@@ -67,7 +67,7 @@ const WhatWeDo = () => {
         <div className='flex gap-10 flex-row mt-20 relative z-10 mx-auto w-4/5'>
             {
                 DATA.map((item)=>(
-                    <DoItems icon={item.icon} title={item.title} description={item.description} link={item.link} />
+                    <DoItems key={item.id} icon={item.icon} title={item.title} description={item.description} link={item.link} />
                 ))
             }
         </div>

@@ -19,7 +19,7 @@ const Navbar = () => {
     }
 
   return (
-    <div className='bg-white'>
+    <div className='bg-white shadow-yellow-300 shadow-[0px 4px 50px 0px rgba(0, 0, 0, 0.08)]'>
         <div className='py-4 w-4/5 mx-auto'>
             <div className='flex justify-between items-center'>
                 <div>
@@ -43,10 +43,10 @@ const Navbar = () => {
                                 }
                             </div>
                             {openDropdown ==='services' &&
-                                <div className='absolute top-10 left-0 bg-red-100 p-3 transition-all duration-300 ease-in-out'>
-                                    <li>nice</li>
-                                    <li>nice</li>
-                                    <li>nice</li>
+                                <div className='absolute w-44 text-nowraps top-10 left-0 bg-gray-100 p-3 transition-all duration-300 ease-in-out divide-y leading-9 divide-customBlue-border'>
+                                    <li>Salesforce</li>
+                                    <li>DocuSign</li>
+                                    <li>Litify</li>
                                 </div>
                             }
                         </div>
@@ -61,10 +61,10 @@ const Navbar = () => {
                                 }
                             </div>
                             {openDropdown==='appexchange' &&
-                                <div className='absolute top-10 left-0 bg-red-100 p-3'>
-                                    <li>nice</li>
-                                    <li>nice</li>
-                                    <li>nice</li>
+                                <div className='absolute w-44 text-nowraps top-10 left-0 bg-gray-100 p-3 transition-all duration-300 ease-in-out divide-y leading-9 divide-customBlue-border'>
+                                    <li>SenderIQ</li>
+                                    <li>LeadLife</li>
+                                    <li>ServiceDesk+</li>
                                 </div>
                             }
                         </div>
@@ -79,10 +79,10 @@ const Navbar = () => {
                                 }
                             </div>
                             {openDropdown === 'results' &&
-                                <div className='absolute top-10 left-0 bg-red-100 p-3'>
-                                    <li>nice</li>
-                                    <li>nice</li>
-                                    <li>nice</li>
+                                <div className='absolute w-44 text-nowraps top-10 left-0 bg-gray-100 p-3 transition-all duration-300 ease-in-out divide-y leading-9 divide-customBlue-border'>
+                                    <li>Our Approach</li>
+                                    <li>Client Testimonials</li>
+                                    <li>Industry Expertise+</li>
                                 </div>
                             }
                         </div>
@@ -97,10 +97,11 @@ const Navbar = () => {
                                 }
                             </div>
                             {openDropdown === 'aboutus' &&
-                                <div className='absolute top-10 left-0 bg-red-100 p-3'>
-                                    <li>nice</li>
-                                    <li>nice</li>
-                                    <li>nice</li>
+                                <div className='absolute w-44 text-nowraps top-10 left-0 bg-gray-100 p-3 transition-all duration-300 ease-in-out divide-y leading-9 divide-customBlue-border'>
+                                    <li>Referral Network</li>
+                                    <li>Careers</li>
+                                    <li>Meet the Founder</li>
+                                    <li>Pressroom & Events</li>
                                 </div>
                             }
                         </div>
@@ -116,10 +117,13 @@ const Navbar = () => {
                             </div>
                             {
                             openDropdown === 'blogs' &&
-                                <div className='absolute top-10 left-0 bg-red-100 p-3'>
-                                    <li>nice</li>
-                                    <li>nice</li>
-                                    <li>nice</li>
+                                <div className='absolute w-44 text-nowraps top-10 left-0 bg-gray-100 p-3 transition-all duration-300 ease-in-out divide-y leading-9 divide-customBlue-border'>
+                                    <li>salesforce</li>
+                                    <li>Litify</li>
+                                    <li>Docusign</li>
+                                    <li>Artificial Inteligence</li>
+                                    <li>Data MIgration</li>
+                                    <li>Microsoft</li>
                                 </div>
                             }
                         </div>

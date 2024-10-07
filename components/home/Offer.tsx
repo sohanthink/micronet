@@ -38,8 +38,8 @@ interface DoItemsProps {
 
 export const DoItems:React.FC<DoItemsProps> =({icon,description})=>{
     return(
-        <div className='p-5 border-[1px] border-customBlue-border hover:border-customBlue-secondary space-y-5 w-1/4 ease-in-out transition-all duration-300 flex items-center justify-center flex-col gap-6'>
-            <Image src={icon} alt='code Icon' />
+        <div className='group p-5 border-[1px] border-customBlue-border hover:border-customBlue-secondary space-y-5 w-1/4 ease-in-out transition-all duration-300 flex items-center justify-center flex-col gap-6'>
+            <Image className='group-hover:scale-125 transition-all duration-300 ease-out' src={icon} alt='code Icon' />
             <p className='text-base font-light text-customDark pb-5 text-center px-5' dangerouslySetInnerHTML={{ __html: description }} />
         </div>
     )

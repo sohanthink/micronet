@@ -22,19 +22,19 @@ const InfoDATA = [
         text:'repeat Business'
     },
     {
-        id:1,
+        id:3,
         icon:man,
         count: '20+',
         text:'Business Consultations'
     },
     {
-        id:1,
+        id:4,
         icon:setting,
         count: '7+',
         text:'Soluations Arcitecht'
     },
     {
-        id:1,
+        id:5,
         icon:search,
         count: '9.57',
         text:'CSAT Score'

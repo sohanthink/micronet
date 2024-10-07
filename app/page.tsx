@@ -5,6 +5,7 @@ import Offer from '@/components/home/Offer';
 import Testimonial from '@/components/home/Testimonial';
 import Info from '@/components/home/Info';
 import SIdeIconBar from '@/components/common/SIdeIconBar';
+import Clients from '@/components/home/Clients';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Offer/>
         <Testimonial/>
         <Info />
+        <Clients/>
     </main>
   );
 }

@@ -32,8 +32,49 @@ const config: Config = {
           DEFAULT:'#404040'
         },
       },
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 };
+
+function addVariablesForColors({ addBase, theme }: any) {
+  const colors = theme('colors');
+  const flattenedColors = flattenColors(colors);
+
+  let newVars = Object.fromEntries(
+    Object.entries(flattenedColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
+
+// Helper function to flatten the color palette
+function flattenColors(colors: any, prefix = ''): any {
+  return Object.keys(colors).reduce((acc: any, color) => {
+    const value = colors[color];
+    const prefixedColor = prefix ? `${prefix}-${color}` : color;
+
+    if (typeof value === 'string') {
+      acc[prefixedColor] = value;
+    } else {
+      Object.assign(acc, flattenColors(value, prefixedColor));
+    }
+
+    return acc;
+  }, {});
+}
+
 export default config;

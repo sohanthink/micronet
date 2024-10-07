@@ -81,20 +81,21 @@ const Testimonial = () => {
           
         </Swiper>
 
-      {/* Custom Next and Prev buttons */}
-      <div className="absolute top-1/2 transform -translate-y-1/2 -left-5 z-10">
-        <button
-          onClick={() => swiperRef.current?.slidePrev()}
-          className="text-customBlue text-[50px]">
-            <FaCircleChevronLeft />
-        </button>
-      </div>
-      <div className="absolute top-1/2 transform -translate-y-1/2 -right-5 z-10">
-        <button onClick={() => swiperRef.current?.slideNext()} 
+        {/* Custom Next and Prev buttons */}
+
+        <div className="absolute top-1/2 transform -translate-y-1/2 -left-5 z-10">
+            <button
+            onClick={() => swiperRef.current?.slidePrev()}
             className="text-customBlue text-[50px]">
-            <FaCircleChevronRight />
-        </button>
-      </div>
+                <FaCircleChevronLeft />
+            </button>
+        </div>
+        <div className="absolute top-1/2 transform -translate-y-1/2 -right-5 z-10">
+            <button onClick={() => swiperRef.current?.slideNext()} 
+                className="text-customBlue text-[50px]">
+                <FaCircleChevronRight />
+            </button>
+        </div>
     </div>
   )
 }

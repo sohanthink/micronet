@@ -48,8 +48,8 @@ interface DoItemsProps {
 
 export const DoItems:React.FC<DoItemsProps> =({icon,title,description,link})=>{
     return(
-        <div className='p-5 border-[1px] border-customBlue-border hover:border-customBlue-secondary space-y-5 w-1/4 ease-in-out transition-all duration-300'>
-            <Image src={icon} alt='code Icon' />
+        <div className='p-5 group border-[1px] border-customBlue-border hover:border-customBlue-secondary space-y-5 w-1/4 ease-in-out transition-all duration-300'>
+            <Image className='group-hover:scale-110' src={icon} alt='code Icon' />
             <h6 className='font-semibold text-lg text-customBlue-dark'>{title}</h6>
             <p className='text-base font-light text-customDark pb-5'>{description}</p>
             <span className='text-customBlue-secondary mt-5'>

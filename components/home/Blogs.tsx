@@ -53,7 +53,7 @@ const BlogDATA = [
 
 const Blogs = () => {
   return (
-    <>
+    <div className="py-10">
         <div className="flex justify-between w-4/5 mx-auto flex-wrap">
         {
             BlogDATA.map((items)=>(
@@ -117,7 +117,7 @@ const Blogs = () => {
     <div className="flex justify-center">
         <Button text="View more Blogs" styles="text-white bg-customBlue hover:bg-white hover:text-customBlue-dark border-[0.3px] hover:border-[0.3px] hover:border-black hover:text-bold inline-block"/>
     </div>
-    </>
+    </div>
   );
 }
 

@@ -8,6 +8,7 @@ import blog1 from '@/public/home/blogs/blog-1.png'
 import blog2 from '@/public/home/blogs/blog-2.png'
 import blog3 from '@/public/home/blogs/blog-3.png'
 import { CiCalendarDate } from "react-icons/ci";
+import Button from "../common/Button";
 
 const BlogDATA = [
     {
@@ -52,11 +53,11 @@ const BlogDATA = [
 
 const Blogs = () => {
   return (
-    <div className="flex justify-between w-3/4 mx-auto flex-wrap">
+    <div className="flex justify-between w-4/5 mx-auto flex-wrap">
         {
             BlogDATA.map((items)=>(
                 <CardContainer key={items.id} className="inter-var">
-                    <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl border-customDark/30 border-[0.1px] w-auto sm:w-[24rem] h-auto  p-6">
+                    <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl border-customDark/30 border-[0.1px] w-auto sm:w-[26rem] h-auto p-6">
                         <CardItem
                         translateZ="100"
                         rotateX={20}
@@ -107,10 +108,13 @@ const Blogs = () => {
                             <CiCalendarDate /> {items.date}
                         </CardItem>
 
-            </CardBody>
+                    </CardBody>
                 </CardContainer>
             ))
         }
+        <div className="mx-auto">
+            <Button text="View more Blogs" styles="text-white bg-customBlue hover:bg-white hover:text-customBlue-dark hover:border-[0.3px] hover:border-black"/>
+        </div>
     </div>
   );
 }

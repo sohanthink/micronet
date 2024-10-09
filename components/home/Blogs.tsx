@@ -15,7 +15,7 @@ const BlogDATA = [
         id:1,
         title:'Mastering the Transition: From Universal Analytics to Google Analytics 4',
         image:blog1,
-        date:'1jan,1973',
+        date:'1 jan,1973',
         tags:[{
             id:1,
             name:'science',
@@ -29,7 +29,7 @@ const BlogDATA = [
         id:2,
         title:'Driving Business Excellence with Salesforce: A Strategy Grounded in Timeless Principles',
         image:blog2,
-        date:'1jan,1974',
+        date:'1 jan,1974',
         tags:[{
             id:1,
             name:'Buisness',
@@ -39,7 +39,7 @@ const BlogDATA = [
         id:3,
         title:'Driving Business Excellence with Salesforce: A Strategy Grounded in Timeless Principles',
         image:blog3,
-        date:'1jan,1984',
+        date:'41 jan,1984',
         tags:[{
             id:1,
             name:'nice',
@@ -53,7 +53,8 @@ const BlogDATA = [
 
 const Blogs = () => {
   return (
-    <div className="flex justify-between w-4/5 mx-auto flex-wrap">
+    <>
+        <div className="flex justify-between w-4/5 mx-auto flex-wrap">
         {
             BlogDATA.map((items)=>(
                 <CardContainer key={items.id} className="inter-var">
@@ -112,10 +113,11 @@ const Blogs = () => {
                 </CardContainer>
             ))
         }
-        <div className="mx-auto">
-            <Button text="View more Blogs" styles="text-white bg-customBlue hover:bg-white hover:text-customBlue-dark hover:border-[0.3px] hover:border-black"/>
-        </div>
     </div>
+    <div className="flex justify-center">
+        <Button text="View more Blogs" styles="text-white bg-customBlue hover:bg-white hover:text-customBlue-dark border-[0.3px] hover:border-[0.3px] hover:border-black inline-block"/>
+    </div>
+    </>
   );
 }
 

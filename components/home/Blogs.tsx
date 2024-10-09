@@ -58,7 +58,7 @@ const Blogs = () => {
         {
             BlogDATA.map((items)=>(
                 <CardContainer key={items.id} className="inter-var">
-                    <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl border-customDark/30 border-[0.1px] w-auto sm:w-[26rem] h-auto p-6">
+                    <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl border-customDark/30 border-[0.1px] w-auto h-auto p-6">
                         <CardItem
                         translateZ="100"
                         rotateX={20}
@@ -104,7 +104,7 @@ const Blogs = () => {
                         <CardItem
                         as="p"
                         translateZ="60"
-                        className="text-customBlue-dark text-sm max-w-sm mt-5 flex gap-5"
+                        className="text-customBlue-dark text-sm max-w-sm mt-5 flex items-center gap-5"
                         >
                             <CiCalendarDate /> {items.date}
                         </CardItem>
@@ -115,7 +115,7 @@ const Blogs = () => {
         }
     </div>
     <div className="flex justify-center">
-        <Button text="View more Blogs" styles="text-white bg-customBlue hover:bg-white hover:text-customBlue-dark border-[0.3px] hover:border-[0.3px] hover:border-black inline-block"/>
+        <Button text="View more Blogs" styles="text-white bg-customBlue hover:bg-white hover:text-customBlue-dark border-[0.3px] hover:border-[0.3px] hover:border-black hover:text-bold inline-block"/>
     </div>
     </>
   );

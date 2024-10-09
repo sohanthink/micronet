@@ -6,6 +6,7 @@ import Testimonial from '@/components/home/Testimonial';
 import Info from '@/components/home/Info';
 import SIdeIconBar from '@/components/common/SIdeIconBar';
 import Clients from '@/components/home/Clients';
+import Blogs from '@/components/home/Blogs';
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
         <Testimonial/>
         <Info />
         <Clients/>
+        <Blogs/>
+        
     </main>
   );
 }

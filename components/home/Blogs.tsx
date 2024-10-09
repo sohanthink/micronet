@@ -15,7 +15,7 @@ const BlogDATA = [
         id:1,
         title:'Mastering the Transition: From Universal Analytics to Google Analytics 4',
         image:blog1,
-        date:'1 jan,1973',
+        date:'1 january, 1973',
         tags:[{
             id:1,
             name:'science',
@@ -29,7 +29,7 @@ const BlogDATA = [
         id:2,
         title:'Driving Business Excellence with Salesforce: A Strategy Grounded in Timeless Principles',
         image:blog2,
-        date:'1 jan,1974',
+        date:'1 March, 1974',
         tags:[{
             id:1,
             name:'Buisness',
@@ -37,9 +37,9 @@ const BlogDATA = [
     },
     {
         id:3,
-        title:'Driving Business Excellence with Salesforce: A Strategy Grounded in Timeless Principles',
+        title:'Synergizing Productivity: Salesforce and Google Cloud Forge a Path to Collaborative',
         image:blog3,
-        date:'41 jan,1984',
+        date:'41 November, 1984',
         tags:[{
             id:1,
             name:'nice',

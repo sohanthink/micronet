@@ -48,7 +48,7 @@ interface DoItemsProps {
 
 export const DoItems:React.FC<DoItemsProps> =({icon,title,description,link})=>{
     return(
-        <div className='p-5 group border-[1px] border-customBlue-border hover:border-customBlue-secondary space-y-5 w-1/4 ease-in-out transition-all duration-300'>
+        <div className='p-5 group border-[1px] border-customBlue-border hover:border-customBlue-secondary space-y-5 w-[48%] md:w-[23%] mb-5 md:mb-0 ease-in-out transition-all duration-300'>
             <Image className='group-hover:scale-110' src={icon} alt='code Icon' />
             <h6 className='font-semibold text-lg text-customBlue-dark'>{title}</h6>
             <p className='text-base font-light text-customDark pb-5'>{description}</p>
@@ -64,14 +64,14 @@ const WhatWeDo = () => {
  <>
     <div className='py-4 relative'>
         <h4 className='common_title'>What We Do</h4>
-        <div className='flex gap-10 flex-row mt-20 relative z-10 mx-auto w-4/5'>
+        <div className='flex flex-wrap md:flex-row mt-20 relative z-10 mx-auto w-11/12 justify-between md:w-4/5'>
             {
                 DATA.map((item)=>(
                     <DoItems key={item.id} icon={item.icon} title={item.title} description={item.description} link={item.link} />
                 ))
             }
         </div>
-        <div className='absolute top-36 left-0 w-full'>
+        <div className='absolute -bottom-80 md:top-36 left-0 w-full'>
             <Image src={Bgshape} className='w-full' alt='backfround-image-shape'  />
         </div>
     </div>
@@ -87,7 +87,7 @@ const WhatWeDo = () => {
                     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                     referrerPolicy='strict-origin-when-cross-origin'
                     allowFullScreen
-                    className='w-full h-[450px] mt-10'
+                    className='md:w-full w-72 h-auto md:h-[450px] mt-10'
                 ></iframe>
             </div>
     </div>

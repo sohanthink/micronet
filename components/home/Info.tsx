@@ -44,14 +44,16 @@ const InfoDATA = [
 const Info = () => {
   return (
     <div className='w-4/5 mx-auto py-44'>
-        <div className='flex gap-10 items-center justify-between'>
+        <div className='flex flex-wrap items-center justify-between'>
             {
                 InfoDATA.map((items)=>(
-                    <div key={items.id} className='flex gap-4 items-center'>
-                        <div><Image src={items.icon} alt='bag icon'/></div>
-                        <div>
-                            <h6 className='text-customBlue-dark text-4xl font-bold'>{items.count}</h6>
-                            <h5 className='text-customDark text-sm'>{items.text}</h5>
+                    <div className='w-[48%] md:w-[18%] mb-10'>
+                        <div key={items.id} className='flex gap-4 items-center'>
+                            <div><Image src={items.icon} alt='bag icon'/></div>
+                            <div>
+                                <h6 className='text-customBlue-dark text-4xl font-bold'>{items.count}</h6>
+                                <h5 className='text-customDark text-sm'>{items.text}</h5>
+                            </div>
                         </div>
                     </div>
                 ))

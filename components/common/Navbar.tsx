@@ -38,7 +38,7 @@ const Navbar = () => {
                         <div className='absolute top-14 right-8 md:static'>
                             <div className='flex flex-col md:flex-row gap-4 bg-customGreen md:bg-transparent md:gap-16 items-end p-5 md:p-0 md:items-center text-black'>
                                 <div className='relative'>
-                                    <div onClick={()=>handleClick('home')} className='flex items-center gap-4 cursor-pointer'>
+                                    <div onClick={()=>handleClick('home')} className='flex items-center gap-4 cursor-pointer mr-8 md:mr-0'>
                                         <Link href='#'>Home</Link>
                                     </div>
                                 </div>

@@ -38,9 +38,9 @@ interface DoItemsProps {
 
 export const DoItems:React.FC<DoItemsProps> =({icon,description})=>{
     return(
-        <div className='group p-5 border-[1px] border-customBlue-border hover:border-customBlue-secondary space-y-5 w-[48%] md:w-[23%] mb-5 md:mb-0 ease-in-out transition-all duration-700 flex items-center justify-center flex-col gap-6'>
+        <div className='group p-1 md:p-5 border-[1px] border-customBlue-border hover:border-customBlue-secondary space-y-5 w-[48%] md:w-[23%] mb-5 md:mb-0 ease-in-out transition-all duration-700 flex items-center justify-center flex-col gap-6'>
             <Image className='group-hover:scale-125 transition-all duration-300 ease-out' src={icon} alt='code Icon' />
-            <p className='text-base font-light text-customDark pb-5 text-center px-5' dangerouslySetInnerHTML={{ __html: description }} />
+            <p className='text-sm md:text-base font-light text-customDark pb-5 text-center px-5' dangerouslySetInnerHTML={{ __html: description }} />
         </div>
     )
 }
@@ -48,9 +48,9 @@ export const DoItems:React.FC<DoItemsProps> =({icon,description})=>{
 const Offer = () => {
   return (
     <div className='py-10 relative '>
-        <h4 className='common_title pt-5'>What We Offer</h4>
-        <p className='text-customDark text-lg text-center py-5 px-20 md:px-72'>We are <b>experts</b> in delivering top-notch services for <b>Salesforce, Litify,</b> and <b>DocuSign</b> to elevate <b>and improve</b> the performance of your <b>business operations.</b></p>
-        <div className='flex flex-wrap md:flex-row justify-between mt-20 relative z-10 mx-auto w-4/5'>
+        <h4 className='common_title pt-2 md:pt-5'>What We Offer</h4>
+        <p className='text-customDark text-lg text-center py-5 px-10 md:px-72'>We are <b>experts</b> in delivering top-notch services for <b>Salesforce, Litify,</b> and <b>DocuSign</b> to elevate <b>and improve</b> the performance of your <b>business operations.</b></p>
+        <div className='flex flex-wrap md:flex-row justify-between mt-10 md:mt-20 relative z-10 mx-auto w-11/12 md:w-4/5'>
             {
                 DATA.map((item)=>(
                     <DoItems key={item.id} icon={item.icon} description={item.description} />

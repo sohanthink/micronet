@@ -54,12 +54,12 @@ const BlogDATA = [
 
 const Blogs = () => {
   return (
-    <div className="py-10">
-        <div className="flex justify-between w-4/5 mx-auto flex-wrap">
+    <div className="py-5 md:py-10">
+        <div className="flex justify-between w-11/12 md:w-4/5 mx-auto flex-wrap">
         {
             BlogDATA.map((items)=>(
                 <CardContainer key={items.id} className="inter-var">
-                    <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl border-customDark/30 border-[0.1px] w-auto h-auto p-6">
+                    <CardBody className="bg-gray-50 relative group/card hover:shadow-2xl border-customDark/30 border-[0.1px] w-auto h-auto p-3 md:p-6">
                         <CardItem
                         translateZ="100"
                         rotateX={20}
@@ -70,7 +70,7 @@ const Blogs = () => {
                             src={items.image}
                             height="1000"
                             width="1000"
-                            className="h-60 w-full object-cover group-hover/card:shadow-xl"
+                            className="h-52 md:h-60 w-full object-cover group-hover/card:shadow-xl"
                             alt="thumbnail"
                         />
                         </CardItem>

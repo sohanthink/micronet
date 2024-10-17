@@ -63,7 +63,7 @@ const WhatWeDo = () => {
   return (
  <>
     <div className='py-4 relative'>
-        <h4 className='common_title'>What We Do</h4>
+        <h4 className='common_title pt-10 md:pt-0'>What We Do</h4>
         <div className='flex flex-wrap md:flex-row mt-20 relative z-10 mx-auto w-11/12 justify-between md:w-4/5'>
             {
                 DATA.map((item)=>(
@@ -79,15 +79,15 @@ const WhatWeDo = () => {
     {/* MIcronetbd section completed */}
 
     <div className='z-20 relative'>
-            <h4 className='common_title pt-20'>Micronetbd Office</h4>
-            <p className='text-customDark text-lg text-center py-5'>Take a <b>Virtual Tour </b>of our <b>Headquarters!</b></p>
-            <div className='w-2/4 mx-auto'>
+            <h4 className='common_title pt-10 md:pt-20'>Micronetbd Office</h4>
+            <p className='text-customDark text-base md:text-lg text-center py-5'>Take a <b>Virtual Tour </b>of our <b>Headquarters!</b></p>
+            <div className='w-3/4 md:w-2/4 mx-auto'>
                 <iframe
                     src='https://www.youtube.com/embed/Y1z069Ci5aE?list=RDyxqw9ju2D_E'
                     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                     referrerPolicy='strict-origin-when-cross-origin'
                     allowFullScreen
-                    className='md:w-full w-72 h-auto md:h-[450px] mt-10'
+                    className='w-full h-auto md:h-[450px] mt-5 md:mt-10'
                 ></iframe>
             </div>
     </div>

@@ -91,7 +91,7 @@ const Blogs = () => {
                         </div>
                         <CardItem
                         translateZ="50"
-                        className="text-xl font-bold text-customBlue-dark mt-4"
+                        className="text-lg md:text-xl font-bold text-customBlue-dark mt-4"
                         >
                         {items.title}
                         </CardItem>
